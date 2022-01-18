@@ -31,7 +31,7 @@ public class VehichleMain {
 		System.out.println("Enter Number of Doors");
 		noOfDoors=scn.nextInt();
 		
-		if(choice==1)
+		if(choice==1)     
 		{
 			Vehichle veh=new Vehichle();
 			veh.setNoOfWheels(wheels);

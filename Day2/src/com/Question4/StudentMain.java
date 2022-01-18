@@ -29,12 +29,13 @@ public class StudentMain {
 		System.out.println("Grade(integer): ");
 		gradeInput=scn.nextInt();
 		
-		//Student st=new Student(nameInput,idInput,gradeInput);
-		Student st2=new Student("Akshay","1123");
-		Student st3=new Student("1124");
+		Student st=new Student(nameInput,idInput,gradeInput);
+		st.display();
+//		Student st2=new Student("Akshay","1123");
+//		Student st3=new Student("1124");
 		//st.display();
-		st2.display(1998);
-		st3.display();
+//		st2.display(1998);
+//		st3.display();
 	}
 
 }

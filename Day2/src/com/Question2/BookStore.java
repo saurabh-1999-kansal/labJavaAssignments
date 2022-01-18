@@ -3,11 +3,11 @@ package com.Question2;
 import java.util.Scanner;
 
 public class BookStore {
-	private static final int size = 10;
-	private static int count = 0;
-	static Book[] books = new Book[size];
+	private  final int size = 10;
+	private  int count = 0;
+	 Book[] books = new Book[size];
 
-	public static void sell(String ISBN, int numOfCopies) {
+	public  void sell(String ISBN, int numOfCopies) {
 		for (int i = 0; i < count; i++) {
 			if (books[i].getISBN().equals(ISBN)) {
 				if (books[i].getNumOfCopies() >= numOfCopies) {
@@ -23,7 +23,7 @@ public class BookStore {
 		System.out.println("Book not available!");
 	}
 
-	public static void order(String bookTitle, int numOfCopies) {
+	public  void order(String bookTitle, int numOfCopies) {
 		for (int i = 0; i < count; i++) {
 			if (books[i].getBookTitle().equals(bookTitle)) {
 				books[i].setNumOfCopies(books[i].getNumOfCopies() + numOfCopies);
@@ -48,7 +48,7 @@ public class BookStore {
 		}
 	}
 
-	public static void display() {
+	public void display() {
 		if (count > 0) {
 			System.out.println("Title - Author - ISBN - Quantity");
 			for (int i=0; i<count; i++) {

@@ -17,7 +17,7 @@ public class CopyOf {
 	}
 	
 	public static void main(String[] args) {
-		int array[]= { 2,6,8,5,3,1,6};
+		int array[]= { 12,32,45,67,87,45};
 		
 		for(int temp:array) {
 			System.out.print(temp + " ");

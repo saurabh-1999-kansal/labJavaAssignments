@@ -17,29 +17,28 @@ The average is: 56.
  */
 
 public class GradesAverage {
-	
+
 	public static void main(String[] args) {
 		System.out.print("Enter the number of students: ");
-		Scanner sc= new Scanner(System.in);
-		int numStudents=sc.nextInt();
-		
-		int grades[]=new int[numStudents];
-		int sum=0;
-		for(int i=0;i<numStudents;i++) {
-			int j=i+1;
-			System.out.print("Enter the grade for the student "+ j +" :");
-			grades[i]=sc.nextInt();
-			
-			if(grades[i]>=0 && grades[i]<=100) {
-				sum+=grades[i];
-			}
-			else {
+		Scanner sc = new Scanner(System.in);
+		int numStudents = sc.nextInt();
+
+		int grades[] = new int[numStudents];
+		int sum = 0;
+		for (int i = 0; i < numStudents; i++) {
+			int j = i + 1;
+			System.out.print("Enter the grade for the student " + j + " :");
+			grades[i] = sc.nextInt();
+
+			if (grades[i] >= 0 && grades[i] <= 100) {
+				sum += grades[i];
+			} else {
 				System.out.println("Invalid, try again ");
 				i--;
 			}
 		}
 		sc.close();
-		int avg=sum/numStudents;
-		System.out.println("The average grade is: "+ avg);
+		double avg = (sum * 1.0) / numStudents;
+		System.out.println("The average grade is: " + avg);
 	}
 }
