@@ -22,10 +22,7 @@ public class q1 {
 		list.add(s2);
 		setDisplay(set);
 		listDisplay(list);
-		set.addAll(list);
-		
-		
-
+		set.addAll(list);        
 	}
 	public static void setDisplay(Set<Student> set) {
 		for(Student s:set) {
@@ -36,9 +33,9 @@ public class q1 {
 		ListIterator<Student> it=list.listIterator();
 		while(it.hasNext()) {
 			System.out.println(it.next().name);
-		}
-	}
-
+		}        
+	}   	
+	                                   
 }
 class Student{
 	String name;
